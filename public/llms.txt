@@ -1,0 +1,23 @@
+# Jwalith T Suresh — Developer Portfolio
+
+> Jwalith T Suresh (JTS) is a Full-Stack Web Developer, Discord & Telegram Bot Developer, and Python Automation Specialist based in Kerala, India.
+
+## Core Specializations
+
+- [Web Development](https://jtsdev.space/#portfolio): Fast, responsive frontends built with React.js, HTML/CSS, PHP, and Django.
+- [Bot Development](https://jtsdev.space/#portfolio): Interactive Discord and Telegram bot engines built with discord.js, python-telegram-bot, and custom API integrations.
+- [Automation Workflows](https://jtsdev.space/#portfolio): Python automation scripts, web scrapers, data parsers, and custom backend schedulers.
+
+## Essential Resources
+
+- [Portfolio Projects](https://jtsdev.space/#portfolio): Interactive showcase of web applications, bots, and automation builds.
+- [About & Background](https://jtsdev.space/#about): Academic journey (BCA student) and technical expertise.
+- [Contact Developer](https://jtsdev.space/#contact): Direct contact channels including Telegram, Discord, and GitHub.
+- [Download Resume](https://jtsdev.space/resume.pdf): Official PDF resume of Jwalith T Suresh.
+- [XML Sitemap](https://jtsdev.space/sitemap.xml): Complete website map for web crawlers.
+
+## Contact & Social Links
+
+- [GitHub Profile](https://github.com/xtros): Open source repositories and projects.
+- [Telegram Contact](https://t.me/jtsxtros): Direct messaging via Telegram.
+- [Discord Profile](https://discord.com/users/1290158416664203285): Direct messaging via Discord.

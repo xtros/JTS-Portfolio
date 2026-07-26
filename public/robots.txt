@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jtsdev.space
+
+# Sitemap
+Sitemap: https://jtsdev.space/sitemap.xml
+# LLM: https://jtsdev.space/llms.txt

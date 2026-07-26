@@ -1,0 +1,206 @@
+.terminal-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+  background-color: var(--term-bg);
+  font-family: var(--font-mono);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, var(--shadow-opacity-lg, 0.4));
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  background-color: var(--term-header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terminal-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.terminal-title {
+  margin: 0 auto;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+}
+
+.terminal-spacer {
+  width: 52px; /* balance actions width */
+}
+
+/* Body */
+.terminal-body {
+  height: 280px;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.log-line {
+  white-space: pre-wrap;
+}
+
+.log-system {
+  color: var(--term-system);
+  text-shadow: var(--term-system-shadow);
+}
+
+.log-input {
+  color: var(--term-text);
+  text-shadow: var(--term-text-shadow);
+}
+
+.log-output {
+  color: var(--term-text);
+  text-shadow: var(--term-text-shadow);
+}
+
+.log-error {
+  color: var(--term-error);
+  text-shadow: var(--term-error-shadow);
+}
+
+/* Suggestions */
+.terminal-suggestions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background-color: var(--term-suggestions-bar-bg);
+  border-top: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+
+.suggestions-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  letter-spacing: 0.05em;
+}
+
+.suggestions-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.suggestion-btn {
+  background: var(--term-suggestion-bg);
+  border: 1px solid var(--term-suggestion-border);
+  color: var(--term-system);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.suggestion-btn:hover {
+  border-color: var(--term-text);
+  color: var(--term-text);
+  background: rgba(var(--text-primary-rgb), 0.04);
+  box-shadow: 0 0 8px rgba(var(--text-primary-rgb), 0.15);
+}
+
+/* Input Form */
+.terminal-input-form {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: var(--term-header-bg);
+}
+
+.input-prompt {
+  color: var(--term-text);
+  font-weight: bold;
+  margin-right: 12px;
+  user-select: none;
+  text-shadow: var(--term-text-shadow);
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--term-text);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  outline: none;
+  text-shadow: var(--term-text-shadow);
+}
+
+.terminal-submit {
+  background: transparent;
+  border: none;
+  color: var(--term-system);
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 4px;
+}
+
+.terminal-submit:hover {
+  color: var(--term-text);
+  text-shadow: var(--term-text-shadow);
+}
+
+.terminal-cursor-block {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: var(--term-cursor);
+  margin-left: 4px;
+  animation: crt-blink 0.8s infinite;
+  vertical-align: middle;
+  box-shadow: 0 0 4px rgba(var(--text-primary-rgb), 0.6);
+}
+
+@keyframes crt-blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .terminal-body {
+    height: 220px;
+    padding: 16px;
+    font-size: 0.85rem;
+  }
+  
+  .terminal-suggestions {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .terminal-input-form {
+    padding: 12px 16px;
+  }
+}
