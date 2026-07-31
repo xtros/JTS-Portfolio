@@ -36,7 +36,7 @@ export default function Home() {
               <span className="status-text">{hero.statusText}</span>
             </div>
 
-            <h1 className="hero-title">
+            <h1 className="hero-title" aria-label={`${hero.firstName} ${hero.lastName}`}>
               {hero.firstName} <br />
               <span className="hero-gradient-text">{hero.lastName}</span>
             </h1>
